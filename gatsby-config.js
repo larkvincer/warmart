@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#ff7610`,
         theme_color: `#ff7610`,
         display: `minimal-ui`,
-        icon: `src/images/warmart-favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {

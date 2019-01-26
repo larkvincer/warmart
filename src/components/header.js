@@ -1,6 +1,5 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
+import PropTypes from 'prop-types'
 import Navbar from './navbar'
 import Logo from './logo'
 import Hamburger from './hamburger'
@@ -31,7 +30,6 @@ class Header extends React.PureComponent {
   }
 
   get shouldShowNavBar() {
-    console.log('AAAA');
     const isWider500 = window.innerWidth >= 500;
     return isWider500 || !isWider500 && this.state.isNavBarOpen;
   }
