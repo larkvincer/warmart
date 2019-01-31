@@ -22,11 +22,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <About />
-      <Contacts />
-      <Office />
-      <Footer />
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <About />
+        <Contacts />
+        <Office />
+        <Footer />
       </>
     )}
   />
