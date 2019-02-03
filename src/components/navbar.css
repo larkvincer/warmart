@@ -56,7 +56,7 @@
 @media only screen and (max-width: 500px) {
   .navbar {
     background-image: none;
-    background-color: orange;
+    background-color: #ff7610;
     position: fixed;
     top: 0;
     right: 0;
