@@ -7,14 +7,16 @@ const ADDRESS = "Yevropeiska+Square,+3,+Ivano-Frankivs'k,+Ivano-Frankivs'ka+obla
 const Office = () => (
   <section>
     <h3>Наш офіс на карті</h3>
-    <iframe
-      width="600"
-      height="450"
-      frameborder="0"
-      src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}
+    <div className="map">
+      <iframe
+        width="100%"
+        height="450"
+        frameBorder="0"
+        src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}
       &q=${ADDRESS}`}
-      allowfullscreen
-    />
+        allowFullScreen
+      />
+    </div>
   </section>
 )
 

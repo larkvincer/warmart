@@ -18,20 +18,35 @@ class Header extends React.PureComponent {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', () => this.setState({ isNavBarOpen: this.shouldShowNavBar }));
+    window.addEventListener('resize', this.updateState);
+    window.addEventListener('orientationchange', this.updateState);
+  }
+  
+  componentDidUpdate() {
+    const body = document.querySelector('body');
+    if (!this.isWider500 && this.state.isNavBarOpen) {
+      body.style.overflowY = 'hidden';
+      body.style.maxHeight = '100vh';
+    } else {
+      body.style.overflowY = 'auto';
+    }
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize');
+    window.removeEventListener('orientationchange');
   }
 
   handleHambClick = () => {
     this.setState((prevState) => ({ isNavBarOpen: !prevState.isNavBarOpen }));
   }
 
-  get shouldShowNavBar() {
-    const isWider500 = window.innerWidth >= 500;
-    return isWider500 || !isWider500 && this.state.isNavBarOpen;
+  updateState = () => {
+    this.setState({ isNavBarOpen: this.isWider500 });
+  }
+
+  get isWider500() {
+    return window.innerWidth >= 500;
   }
 
   render() {
@@ -39,7 +54,7 @@ class Header extends React.PureComponent {
       <header className="header">
         <Logo />
         <Hamburger isOpen={this.state.isNavBarOpen} onClick={this.handleHambClick}/>
-        {this.shouldShowNavBar && <Navbar items={this.items} />}
+        {this.state.isNavBarOpen && <Navbar items={this.items} />}
       </header>
     )
   }

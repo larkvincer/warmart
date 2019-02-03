@@ -12,7 +12,7 @@ const HamburgerBtn = ({ isOpen, onClick }) => (
 )
 
 HamburgerBtn.propTypes = {
-  isOpen: PropTypes.boolean,
+  isOpen: PropTypes.bool,
   onClick: PropTypes.func
 }
 
