@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Contacts = () => (
-  <section className="section">
+  <section className="contacts">
     <h3>Контакти</h3>
     <article>
       <h4>Пошта:</h4>

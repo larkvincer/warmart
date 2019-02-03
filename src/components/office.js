@@ -1,11 +1,12 @@
 import React from 'react'
 import './office.css'
+import './utils.css'
 
 const API_KEY = 'AIzaSyDG4wijlW19SBYL9zmKCqOQSwDYmVD6pZw'
 const ADDRESS = "Yevropeiska+Square,+3,+Ivano-Frankivs'k,+Ivano-Frankivs'ka+oblast"
 
 const Office = () => (
-  <section>
+  <section className="office align_center">
     <h3>Наш офіс на карті</h3>
     <div className="map">
       <iframe

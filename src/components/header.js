@@ -10,14 +10,14 @@ class Header extends React.PureComponent {
   currentScrollOffset = 0;
 
   items = [
-    'Головна',
-    'Про нас',
-    'Контакти',
-    'Наш офіс'
+    { title: 'Головна', classSelector: '.header' },
+    { title: 'Про нас', classSelector: '.about' },
+    { title: 'Контакти', classSelector: '.contacts' },
+    { title: 'Наш офіс', classSelector: '.office' },
   ]
 
   state = {
-    isNavBarOpen: true
+    isNavBarOpen: false
   }
 
   componentDidMount() {
@@ -60,13 +60,25 @@ class Header extends React.PureComponent {
     return window.innerWidth >= 500;
   }
 
+  setCurrentScrollOffset = (offset) => {
+    console.log('hello')
+    this.currentScrollOffset = offset;
+    this.handleHambClick();
+  }
+
   render() {
     return (
       <>
         <Hamburger isOpen={this.state.isNavBarOpen} onClick={this.handleHambClick}/>
         <header className="header">
           <Logo />
-          {this.state.isNavBarOpen && <Navbar items={this.items} />}
+          {this.state.isNavBarOpen &&
+            <Navbar
+              setCurrentScrollOffset={this.setCurrentScrollOffset}
+              isWider500={this.isWider500}
+              items={this.items}
+            />
+          }
         </header>
       </>
     )
