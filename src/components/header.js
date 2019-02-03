@@ -7,6 +7,8 @@ import './header.css'
 
 
 class Header extends React.PureComponent {
+  currentScrollOffset = 0;
+
   items = [
     'Головна',
     'Про нас',
@@ -23,13 +25,18 @@ class Header extends React.PureComponent {
     window.addEventListener('orientationchange', this.updateState);
   }
   
+  get isMobileNavbarOpen() {
+    return !this.isWider500 && this.state.isNavBarOpen;
+  }
   componentDidUpdate() {
     const body = document.querySelector('body');
-    if (!this.isWider500 && this.state.isNavBarOpen) {
+    if (this.isMobileNavbarOpen) {
       body.style.overflowY = 'hidden';
       body.style.maxHeight = '100vh';
     } else {
       body.style.overflowY = 'auto';
+      body.style.maxHeight = 'inherit';
+      window.scroll(0, this.currentScrollOffset);
     }
   }
 
@@ -39,6 +46,9 @@ class Header extends React.PureComponent {
   }
 
   handleHambClick = () => {
+    if (!this.state.isNavBarOpen) {
+      this.currentScrollOffset = window.scrollY;
+    }
     this.setState((prevState) => ({ isNavBarOpen: !prevState.isNavBarOpen }));
   }
 
@@ -52,11 +62,13 @@ class Header extends React.PureComponent {
 
   render() {
     return (
-      <header className="header">
-        <Logo />
+      <>
         <Hamburger isOpen={this.state.isNavBarOpen} onClick={this.handleHambClick}/>
-        {this.state.isNavBarOpen && <Navbar items={this.items} />}
-      </header>
+        <header className="header">
+          <Logo />
+          {this.state.isNavBarOpen && <Navbar items={this.items} />}
+        </header>
+      </>
     )
   }
 }

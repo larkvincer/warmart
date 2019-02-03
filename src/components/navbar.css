@@ -57,7 +57,7 @@
   .navbar {
     background-image: none;
     background-color: orange;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
