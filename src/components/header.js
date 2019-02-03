@@ -11,6 +11,7 @@ class Header extends React.PureComponent {
     'Головна',
     'Про нас',
     'Контакти',
+    'Наш офіс'
   ]
 
   state = {

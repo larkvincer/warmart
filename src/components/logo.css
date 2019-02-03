@@ -4,4 +4,5 @@
   padding: 1em;
   flex-shrink: 1;
   max-width: 500px;
+  min-width: 250px;
 }
