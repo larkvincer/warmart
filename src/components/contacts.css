@@ -1,0 +1,47 @@
+.contacts {
+  width: 100%;
+}
+
+.contacts__item {
+  width: 50%;
+  min-width: 300px;
+  padding: 30px;
+}
+
+.contacts__icon {
+  display: inline;
+  margin-right: 5px;
+  margin-bottom: 0;
+  vertical-align: text-bottom;
+}
+
+.contacts__value {
+  font-weight: bolder;
+}
+
+.contacts__phone-number {
+  text-align: right;
+  font-weight: bolder;
+}
+
+.contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.background_orange {
+  background-color: #ff7610;
+  color: #333;
+}
+
+.background_black {
+  background-color: #333;
+  color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  .contacts__item {
+    width: 100%;
+    min-width: unset;
+  }
+}

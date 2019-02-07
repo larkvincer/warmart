@@ -17,7 +17,7 @@ class Header extends React.PureComponent {
   ]
 
   state = {
-    isNavBarOpen: false
+    isNavBarOpen: true
   }
 
   componentDidMount() {
@@ -61,7 +61,6 @@ class Header extends React.PureComponent {
   }
 
   setCurrentScrollOffset = (offset) => {
-    console.log('hello')
     this.currentScrollOffset = offset;
     this.handleHambClick();
   }

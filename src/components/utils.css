@@ -1,3 +1,19 @@
 .align_center {
   text-align: center;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.inline {
+  display: inline;
+}
+
+.title {
+  margin-top: 30px;
+}
+
+.section {
+  padding-top: 30px;
+}

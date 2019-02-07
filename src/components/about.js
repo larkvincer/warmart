@@ -3,7 +3,7 @@ import './about.css'
 import './utils.css'
 
 const About = () => (
-  <section className="about align_center">
+  <section className="about align_center section">
     <h3>Про нас</h3>
     <div>
       <p>Бла-бла</p>
