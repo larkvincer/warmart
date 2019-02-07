@@ -1,5 +1,6 @@
 .contacts {
   width: 100%;
+  background-color: #ff7610;
 }
 
 .contacts__item {
@@ -15,8 +16,9 @@
   vertical-align: text-bottom;
 }
 
-.contacts__value {
+.contacts__mail {
   font-weight: bolder;
+  text-align: right;
 }
 
 .contacts__phone-number {
@@ -43,5 +45,12 @@
   .contacts__item {
     width: 100%;
     min-width: unset;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .contacts__item {
+    padding-right: 100px;
+    padding-left: 100px;
   }
 }

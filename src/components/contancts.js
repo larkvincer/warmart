@@ -11,7 +11,7 @@ const Contacts = () => (
       <article className="contacts__item background_orange">
         <img className="contacts__icon" src={MailIconUrl} />
         <h4 className="uppercase inline">Пошта:</h4>
-        <div className="contacts__value">info@warmart.com.ua</div>
+        <div className="contacts__mail">info@warmart.com.ua</div>
       </article>
       <article className="contacts__item background_black">
         <img className="contacts__icon" src={PhoneIconUrl} />

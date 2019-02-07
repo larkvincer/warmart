@@ -25,9 +25,13 @@ const Navbar = ({ items = [], setCurrentScrollOffset, isWider500 }) => (
           className="list__item"
           onClick={redirectToSection(item.classSelector, setCurrentScrollOffset, isWider500)}
         >
-          {item.title}
+          {item.title === 'Контакти' ? <strong>{item.title}</strong> : item.title}
         </li>)}
     </ul>
+    <div className="description align_center">
+      Встановлення <strong>газових</strong> та <strong>твердопаливних</strong> котлів.<br/>
+      Будь-які види <strong>сантехнічних</strong> робіт.<br/>
+    </div>
   </nav>
 )
 
