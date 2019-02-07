@@ -29,13 +29,7 @@ class Header extends React.PureComponent {
     return !this.isWider500 && this.state.isNavBarOpen;
   }
   componentDidUpdate() {
-    const body = document.querySelector('body');
-    if (this.isMobileNavbarOpen) {
-      body.style.overflowY = 'hidden';
-      body.style.maxHeight = '100vh';
-    } else {
-      body.style.overflowY = 'auto';
-      body.style.maxHeight = 'inherit';
+    if (!this.isMobileNavbarOpen) {
       window.scroll(0, this.currentScrollOffset);
     }
   }
@@ -60,6 +54,10 @@ class Header extends React.PureComponent {
     return window.innerWidth >= 500;
   }
 
+  get shouldRenderNavbar() {
+    return this.isWider500 || this.isMobileNavbarOpen;
+  }
+
   setCurrentScrollOffset = (offset) => {
     this.currentScrollOffset = offset;
     this.handleHambClick();
@@ -68,16 +66,14 @@ class Header extends React.PureComponent {
   render() {
     return (
       <>
-        <Hamburger isOpen={this.state.isNavBarOpen} onClick={this.handleHambClick}/>
+        <Hamburger isOpen={this.isMobileNavbarOpen} onClick={this.handleHambClick}/>
         <header className="header">
           <Logo />
-          {this.state.isNavBarOpen &&
-            <Navbar
-              setCurrentScrollOffset={this.setCurrentScrollOffset}
-              isWider500={this.isWider500}
-              items={this.items}
-            />
-          }
+          {this.shouldRenderNavbar && <Navbar
+            setCurrentScrollOffset={this.setCurrentScrollOffset}
+            isWider500={this.isWider500}
+            items={this.items}
+          />}
         </header>
       </>
     )
