@@ -51,7 +51,9 @@ class Header extends React.PureComponent {
   }
 
   get isWider500() {
-    return window.innerWidth >= 500;
+    if (window) {
+      return window.innerWidth >= 500;
+    }
   }
 
   get shouldRenderNavbar() {
