@@ -17,7 +17,7 @@ class Header extends React.PureComponent {
   ]
 
   state = {
-    isNavBarOpen: true
+    isNavBarOpen: false
   }
 
   componentDidMount() {

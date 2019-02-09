@@ -1,0 +1,48 @@
+.about {
+  overflow: auto;
+}
+
+.about-item {
+  width: 100%;
+  display: flex;
+}
+
+.about-item__desc {
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.gas-heating {
+  background-color: #4D6776;
+}
+
+.about-item__image-container {
+  flex: 1 1 auto;
+}
+
+.about-item__image {
+  margin: 0;
+  height: 100%;
+}
+
+.float_right {
+  float: right;
+}
+
+.float_left {
+  float: left;
+}
+
+.text_black {
+  color: #333;
+}
+
+@media only screen and (max-width: 695px) {
+  .about-item {
+    flex-direction: column-reverse;
+  }
+}
