@@ -51,7 +51,7 @@ class Header extends React.PureComponent {
   }
 
   get isWider500() {
-    if (window) {
+    if (typeof window !== 'undefined') {
       return window.innerWidth >= 500;
     }
   }
