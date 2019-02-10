@@ -28,7 +28,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "postbuild": "rm -rf docs && mv public docs",
     "develop": "gatsby develop",
     "start": "npm run develop",
