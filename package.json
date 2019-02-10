@@ -28,8 +28,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "postbuild": "mv public docs",
+    "build": "gatsby build --prefix-paths",
+    "postbuild": "rm -rf docs && mv public docs",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
