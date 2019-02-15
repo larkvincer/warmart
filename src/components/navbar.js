@@ -30,6 +30,7 @@ const Navbar = ({ items = [], setCurrentScrollOffset, isWider500 }) => (
     </ul>
     <div className="description align_center">
       Встановлення <strong>газових</strong> та <strong>твердопаливних</strong> котлів.<br/>
+      Монтаж <strong>кондиціонерів. </strong>
       Будь-які види <strong>сантехнічних</strong> робіт.<br/>
     </div>
   </nav>

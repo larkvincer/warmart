@@ -17,3 +17,11 @@
 .section {
   padding-top: 30px;
 }
+
+.direction_column {
+  flex-direction: column;
+}
+
+.flex-justify_center {
+  justify-content: center;
+}

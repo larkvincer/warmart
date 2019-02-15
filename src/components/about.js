@@ -1,6 +1,7 @@
 import React from 'react'
 import GasBoilerUrl from '../images/gas-boiler.jpg'
 import SolidHeatingUrl from '../images/solid_heating.png'
+import ConditionerUrl from '../images/conditioner.jpg'
 import './about.css'
 import './utils.css'
 
@@ -9,7 +10,7 @@ const About = () => (
     <h3>Про нас</h3>
     <div className="about-item gas-heating">
       <p className="about-item__desc">
-        Встановлюємо газове опалення. Надаємо гарантію та сервіс.
+        Встановлюємо індивідуальне опалення. Надаємо гарантію та сервіс.
       </p>
       <div className="about-item__image-container">
         <img className="about-item__image float_right" width="500" src={GasBoilerUrl} />
@@ -22,6 +23,14 @@ const About = () => (
       <p className="about-item__desc text_black">
         Надаємо консультації щодо встановлення твердопаливних котлів.<br/>
         Проводимо монтаж та сервіс.
+      </p>
+    </div>
+    <div className="about-item about-item_conditioner direction_column">
+      <div>
+        <img className="about-item__image" width="500" src={ConditionerUrl} />
+      </div>
+      <p className="text_black flex-justify_center about-item__desc">
+        Встановлюємо кондиціонери.
       </p>
     </div>
   </section>

@@ -7,6 +7,10 @@
   display: flex;
 }
 
+.about-item_conditioner {
+  margin-top: 50px;
+}
+
 .about-item__desc {
   color: #fff;
   padding: 50px;
@@ -44,5 +48,9 @@
 @media only screen and (max-width: 695px) {
   .about-item {
     flex-direction: column-reverse;
+  }
+
+  .about-item_conditioner {
+    flex-direction: column;
   }
 }
