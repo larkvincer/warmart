@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{139:function(e,t,a){"use strict";a.r(t);var n=a(0),c=a.n(n),r=a(149),i=a(147);t.default=function(){return c.a.createElement(r.a,null,c.a.createElement(i.a,{title:"Компанія",keywords:["gatsby","application","react"]}))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-4f0dcf1e52d864e6663f.js.map
