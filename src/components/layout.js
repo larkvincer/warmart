@@ -22,6 +22,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        { children }
         <Header siteTitle={data.site.siteMetadata.title} />
         <About />
         <Contacts />

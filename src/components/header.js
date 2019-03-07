@@ -24,7 +24,7 @@ class Header extends React.PureComponent {
     window.addEventListener('resize', this.updateState);
     window.addEventListener('orientationchange', this.updateState);
   }
-  
+
   get isMobileNavbarOpen() {
     return !this.isWider500 && this.state.isNavBarOpen;
   }

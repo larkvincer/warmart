@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Вомарт. Опалення. Сантехніка. Кодиціонування.`,
+    description: `Вомарт - компанія, що займається монтажем, проектування та підтримкою індивідуального опалення, сантехнічних мереж, систем кондиціонування. Встановлюємо газові та твердопаливні котли. Займаємося ремонтом газових та твердопаливних котлів. Продаємо необхідне обладнання.`,
     author: `@gatsbyjs`,
   },
   plugins: [

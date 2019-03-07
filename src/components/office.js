@@ -19,6 +19,7 @@ const Office = () => (
       </article>
       <article className="map">
         <iframe
+          title="Office location"
           width="100%"
           height="450"
           frameBorder="0"
