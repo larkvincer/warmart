@@ -54,6 +54,7 @@ class Header extends React.PureComponent {
     if (typeof window !== 'undefined') {
       return window.innerWidth >= 500;
     }
+    return false;
   }
 
   get shouldRenderNavbar() {

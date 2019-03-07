@@ -9,12 +9,12 @@ const Contacts = () => (
     <h3 className="align_center">Контакти</h3>
     <div className="contacts-container">
       <article className="contacts__item background_orange">
-        <img className="contacts__icon" src={MailIconUrl} />
+        <img alt="mail" className="contacts__icon" src={MailIconUrl} />
         <h4 className="uppercase inline">Пошта:</h4>
         <div className="contacts__mail">info@warmart.com.ua</div>
       </article>
       <article className="contacts__item background_black">
-        <img className="contacts__icon" src={PhoneIconUrl} />
+        <img alt="phone" className="contacts__icon" src={PhoneIconUrl} />
         <h4 className="uppercase inline">Телефони:</h4>
         <div className="contacts__phone-number">+38 093 224 8686</div>
         <div className="contacts__phone-number">+38 095 273 8686</div>

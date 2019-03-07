@@ -13,12 +13,12 @@ const About = () => (
         Встановлюємо індивідуальне опалення. Надаємо гарантію та сервіс.
       </p>
       <div className="about-item__image-container">
-        <img className="about-item__image float_right" width="500" src={GasBoilerUrl} />
+        <img alt="gas boiler" className="about-item__image float_right" width="500" src={GasBoilerUrl} />
       </div>
     </div>
     <div className="about-item">
       <div className="about-item__image-container">
-        <img className="about-item__image float_left" width="500" src={SolidHeatingUrl} />
+        <img alt="solid heating" className="about-item__image float_left" width="500" src={SolidHeatingUrl} />
       </div>
       <p className="about-item__desc text_black">
         Надаємо консультації щодо встановлення твердопаливних котлів.<br/>
@@ -27,7 +27,7 @@ const About = () => (
     </div>
     <div className="about-item about-item_conditioner direction_column">
       <div>
-        <img className="about-item__image" width="500" src={ConditionerUrl} />
+        <img alt="conditioner" className="about-item__image" width="500" src={ConditionerUrl} />
       </div>
       <p className="text_black flex-justify_center about-item__desc">
         Встановлюємо кондиціонери.
