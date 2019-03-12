@@ -4,7 +4,7 @@ import './office.css'
 import './utils.css'
 
 const API_KEY = 'AIzaSyDG4wijlW19SBYL9zmKCqOQSwDYmVD6pZw'
-const ADDRESS = "Yevropeiska+Square,+3,+Ivano-Frankivs'k,+Ivano-Frankivs'ka+oblast"
+const ADDRESS = "Pobutova+St,+4,+Ivano-Frankivs'k,+Ivano-Frankivs'ka+oblast,+76000"
 
 const Office = () => (
   <section className="office align_center section">
@@ -14,7 +14,7 @@ const Office = () => (
         <img className="address-icon" src={LocationIconUrl} alt="location icon" />
         <h4 className="address-title">Адреса:</h4>
         <div>
-          м. Івано-Франківськ, вулиця <strong>Європейська Площа 3</strong>
+          м. Івано-Франківськ, вулиця <strong>Побутова 4</strong>
         </div>
       </article>
       <article className="map">

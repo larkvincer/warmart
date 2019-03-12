@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/',
+  pathPrefix: '/warmart/',
   siteMetadata: {
     title: `Вомарт. Опалення. Сантехніка. Кодиціонування.`,
     description: `Вомарт - компанія, що займається монтажем, проектування та підтримкою індивідуального опалення, сантехнічних мереж, систем кондиціонування. Встановлюємо газові та твердопаливні котли. Займаємося ремонтом газових та твердопаливних котлів. Продаємо необхідне обладнання.`,
@@ -34,8 +34,5 @@ module.exports = {
         pathToConfigModule: `${__dirname}/src/utils/typography.js`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }
