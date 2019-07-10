@@ -10,7 +10,7 @@ const About = () => (
     <h3>Про нас</h3>
     <div className="about-item gas-heating">
       <p className="about-item__desc">
-        Встановлюємо індивідуальне опалення. Надаємо гарантію та сервіс.
+        Встановлюємо індивідуальне опалення. Монтуємо теплові насоси. Надаємо гарантію та сервіс.
       </p>
       <div className="about-item__image-container">
         <img alt="gas boiler" className="about-item__image float_right" width="500" src={GasBoilerUrl} />
